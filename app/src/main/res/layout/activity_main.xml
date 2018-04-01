@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.innopolis.mjazz.mendeleytable.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_layout2"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <fragment
+                android:id="@+id/fragment_11"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_layout2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+            <fragment
+                android:id="@+id/fragment_12"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                tools:layout="@layout/fragment_element_layout" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/constraint_layout3"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout1_1">
+
+
+            <fragment
+                android:id="@+id/fragment_21"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment" />
+            <fragment
+                android:id="@+id/fragment_22"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_21"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_23"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_22"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_24"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_23"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_25"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_24"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_26"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_25"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_27"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_26"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_28"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_27"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_29"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_28"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_210"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_29"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_211"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_210"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_212"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_211"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_213"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_212"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_214"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_213"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_215"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_214"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_216"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_215"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_layout4"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout2">
+
+            <fragment
+                android:id="@+id/fragment_31"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment" />
+            <fragment
+                android:id="@+id/fragment_32"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_31"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_33"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_32"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_34"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_33"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_35"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_34"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_36"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_35"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_37"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_36"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_38"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_37"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_39"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_38"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_310"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_39"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_311"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_310"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_312"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_311"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_313"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_312"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_314"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_313"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_315"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_314"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+            <fragment
+                android:id="@+id/fragment_316"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fragment_315"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintDimensionRatio="W, 2:2.75"
+                android:layout_margin="2dp"
+                android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_layout5"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout3">
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_layout6"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout4">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_layout7"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout5">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout6"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</HorizontalScrollView>

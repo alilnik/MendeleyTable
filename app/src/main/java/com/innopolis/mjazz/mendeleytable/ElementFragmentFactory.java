@@ -31,10 +31,10 @@ public class ElementFragmentFactory {
             try {
                 JSONObject json = new JSONObject(jsonString);
                 JSONArray elements = json.getJSONArray("elements");
-                for (int i = 1; i <= 10; i++) {
+                for (int i = 0; i <= 10; i++) {
                     ElementModel.elementName = elements.getJSONObject(i).getString("name");
                     ElementModel.elementShortcut = elements.getJSONObject(i).getString("symbol");
-                    ElementModel.elementNumber = i;
+                    ElementModel.elementNumber = i + 1;
                     ElementModel.elementColor = Color.parseColor(elements.getJSONObject(i).getString("color"));
                     int id = context.getResources().getIdentifier("fragment_" + ElementModel.elementShortcut, "id", context.getPackageName());
                     composeElementFragment(id, ElementModel.elementNumber, ElementModel.elementShortcut, ElementModel.elementName, ElementModel.elementColor);

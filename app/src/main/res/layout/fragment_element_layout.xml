@@ -28,40 +28,40 @@
 
         <TextView
             android:id="@+id/text_element_number"
-            android:text="00"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="00"
             app:layout_constraintBottom_toTopOf="@id/guildline_horizontal_02"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:gravity="center"
-            android:autoSizeTextType="uniform"
-            android:autoSizeStepGranularity="1sp"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_element_shortcut"
-            android:text="Ex"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Ex"
             app:layout_constraintBottom_toBottomOf="@id/guildline_horizontal_08"
-            app:layout_constraintTop_toTopOf="@id/guildline_horizontal_02"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:gravity="center"
-            android:autoSizeTextType="uniform"/>
+            app:layout_constraintTop_toTopOf="@id/guildline_horizontal_02" />
 
         <TextView
             android:id="@+id/text_element_name"
-            android:text="Example"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Example"
+            android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guildline_horizontal_08"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:gravity="center"
-            android:textSize="10sp"/>
+            app:layout_constraintTop_toTopOf="@id/guildline_horizontal_08" />
 
     </android.support.constraint.ConstraintLayout>
 

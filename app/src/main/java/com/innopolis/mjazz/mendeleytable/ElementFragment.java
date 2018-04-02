@@ -17,10 +17,10 @@ public class ElementFragment extends Fragment {
     private TextView textElementNumber;
     private TextView textElementShortcut;
     private TextView textElementName;
-    ConstraintLayout constraintLayout;
     private String elementNumber;
     private String elementShortcut;
     private String elementName;
+    private int color;
 
     @Nullable
     @Override
@@ -37,6 +37,7 @@ public class ElementFragment extends Fragment {
         textElementShortcut.setText(elementShortcut);
         textElementName = view.findViewById(R.id.text_element_name);
         textElementName.setText(elementName);
+        this.getView().setBackgroundColor(color);
     }
 
 
@@ -45,6 +46,7 @@ public class ElementFragment extends Fragment {
         elementName = args.getString("name");
         elementShortcut = args.getString("shortcut");
         elementNumber = args.getString("number");
+        color = args.getInt("color");
     }
 
 

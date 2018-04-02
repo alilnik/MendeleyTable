@@ -11,7 +11,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        factory = new ElementFragmentFactory(getFragmentManager());
-        factory.composeElementFragment(R.id.fragment_11, 1, "H", "Hydrogen");
+        factory = new ElementFragmentFactory(getFragmentManager(), this);
+        factory.initElements();
     }
+
+
 }

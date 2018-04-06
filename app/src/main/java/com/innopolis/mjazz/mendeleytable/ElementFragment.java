@@ -1,6 +1,8 @@
 package com.innopolis.mjazz.mendeleytable;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
@@ -13,7 +15,8 @@ import android.widget.TextView;
  * Created by mjazz on 11.03.2018.
  */
 
-public class ElementFragment extends Fragment {
+public class ElementFragment extends Fragment implements View.OnClickListener{
+    private static final String wikiURL = "https://en.wikipedia.org/wiki/";
     private TextView textElementNumber;
     private TextView textElementShortcut;
     private TextView textElementName;
@@ -25,7 +28,9 @@ public class ElementFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_element_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment_element_layout, container, false);
+        view.setOnClickListener(this);
+        return view;
     }
 
 
@@ -50,4 +55,10 @@ public class ElementFragment extends Fragment {
     }
 
 
+    @Override
+    public void onClick(View view) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(wikiURL + elementName));
+        startActivity(i);
+    }
 }

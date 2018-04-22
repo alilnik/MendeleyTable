@@ -31,7 +31,8 @@ public class ElementFragmentFactory {
             try {
                 JSONObject json = new JSONObject(jsonString);
                 JSONArray elements = json.getJSONArray("elements");
-                for (int i = 0; i < 36; i++) {
+                for (int i = 0; i < 118; i++) {
+                    if ((i >= 56 && i <= 69) || (i >= 88 && i <= 101)) continue;
                     ElementModel.elementName = elements.getJSONObject(i).getString("name");
                     ElementModel.elementShortcut = elements.getJSONObject(i).getString("symbol");
                     ElementModel.elementNumber = i + 1;

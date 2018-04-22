@@ -1066,7 +1066,7 @@
                 android:layout_marginRight="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="W, 2:2.75"
-                app:layout_constraintLeft_toRightOf="@id/fragment_Lr"
+                app:layout_constraintLeft_toRightOf="@id/fragment_Fr"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <fragment
@@ -1074,7 +1074,8 @@
                 android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginLeft="148dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_marginVertical="1dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="W, 2:2.75"

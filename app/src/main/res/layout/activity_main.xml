@@ -1201,7 +1201,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <fragment
-                android:id="@+id/fragment_Uut"
+                android:id="@+id/fragment_Nh"
                 android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -1223,11 +1223,11 @@
                 android:layout_marginRight="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="W, 2:2.75"
-                app:layout_constraintLeft_toRightOf="@id/fragment_Uut"
+                app:layout_constraintLeft_toRightOf="@id/fragment_Nh"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <fragment
-                android:id="@+id/fragment_Uup"
+                android:id="@+id/fragment_Mc"
                 android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -1249,11 +1249,11 @@
                 android:layout_marginRight="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="W, 2:2.75"
-                app:layout_constraintLeft_toRightOf="@id/fragment_Uup"
+                app:layout_constraintLeft_toRightOf="@id/fragment_Mc"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <fragment
-                android:id="@+id/fragment_Uus"
+                android:id="@+id/fragment_Ts"
                 android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -1266,7 +1266,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <fragment
-                android:id="@+id/fragment_Uuo"
+                android:id="@+id/fragment_Og"
                 android:name="com.innopolis.mjazz.mendeleytable.ElementFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -1275,7 +1275,7 @@
                 android:layout_marginRight="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="W, 2:2.75"
-                app:layout_constraintLeft_toRightOf="@id/fragment_Uus"
+                app:layout_constraintLeft_toRightOf="@id/fragment_Ts"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

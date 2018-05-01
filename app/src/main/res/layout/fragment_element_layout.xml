@@ -49,7 +49,8 @@
             app:layout_constraintBottom_toBottomOf="@id/guildline_horizontal_08"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guildline_horizontal_02" />
+            app:layout_constraintTop_toTopOf="@id/guildline_horizontal_02"
+            android:textSize="32dp"/>
 
         <TextView
             android:id="@+id/text_element_name"
@@ -57,7 +58,7 @@
             android:layout_height="0dp"
             android:gravity="center"
             android:text="Example"
-            android:textSize="10sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

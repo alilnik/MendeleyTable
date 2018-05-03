@@ -10,9 +10,18 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /**
+         * Инициализация активити, указание нужного лэйаут фала
+         */
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /**
+         * Создание фабрики фрагментов элементов
+         */
         factory = new ElementFragmentFactory(getFragmentManager(), this);
+        /**
+         * Вызов функции из фабрики для заполнения лэйаута фрагментами
+         */
         factory.initElements();
     }
 

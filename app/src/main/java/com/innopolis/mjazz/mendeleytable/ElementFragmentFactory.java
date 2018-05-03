@@ -25,6 +25,9 @@ public class ElementFragmentFactory {
         this.context = context;
     }
 
+    /**
+     * Функция, инициализирующая все фрагменты
+     */
     public void initElements() {
         String jsonString = readJSON();
         if (jsonString != null) {
@@ -47,6 +50,14 @@ public class ElementFragmentFactory {
         }
     }
 
+    /**
+     * Конструирует фрагмент, содержащий в себе переданую информацию об элементе
+     * @param fragmentId айди фрагмента
+     * @param textElementNumber порядковый номер элемента
+     * @param textElementShortcut сокращение названия элемента
+     * @param textElementName название элемента
+     * @param color цвет карточки элемента
+     */
     public void composeElementFragment(int fragmentId, int textElementNumber, String textElementShortcut, String textElementName, int color) {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         elementFragment = new ElementFragment();
@@ -56,6 +67,9 @@ public class ElementFragmentFactory {
         fragmentTransaction.commit();
     }
 
+    /**
+     * конструирует пакет для передачи в класс фрагмента
+     */
     private void composeBundle(int textElementNumber, String textElementShortcut, String textElementName, int color) {
         bundle.putString("name", textElementName);
         bundle.putString("shortcut", textElementShortcut);
@@ -64,6 +78,10 @@ public class ElementFragmentFactory {
     }
 
 
+    /**
+     * читает json файл, который содержит информацию обо всех хим элементах
+     * @return
+     */
     private String readJSON() {
         String json = null;
         try {
@@ -80,6 +98,9 @@ public class ElementFragmentFactory {
         return json;
     }
 
+    /**
+     * простая модель для наполнения данными об элементе
+     */
     private static class ElementModel {
         private static int elementNumber;
         private static String elementShortcut;
